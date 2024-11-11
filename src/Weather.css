@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?weather,sky') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input {
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 2px solid #5c91ec;
+    margin-right: 10px;
+    width: 70%;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    border-color: #5c91ec;
+    outline: none;
+}
+
+.button {
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    background-color: #5c91ec;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #5c91ec;
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.result:hover {
+    transform: scale(1.02);
+}
+
+.result h1 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #5c91ec;
+}
+
+.result .temp {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.result .location {
+    font-size: 22px;
+    font-weight: 500;
+    color: #4A90E2;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -1,13 +1,10 @@
 
-import './App.css';
-import Flicker from './Flicker';
-
+import Weather from './Weather';
 
 function App() {
   return (
     <div className="App">
-      <h1>Image Flicker</h1>
-      <Flicker/>
+      <Weather/>
      
     </div>
   );
